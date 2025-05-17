@@ -1,7 +1,7 @@
-const { sendLine } = require('../src/app/lib/line');
-const { getTodayTasks } = require('../src/app/lib/notion');
+import { sendLine } from '../src/app/lib/line';
+import { getTodayTasks } from '../src/app/lib/notion';
 
-module.exports = async (req, res) => {
+export default async (req: any, res: any) => {
   if (req.method !== 'GET') {
     res.status(405).send('Method Not Allowed');
     return;
