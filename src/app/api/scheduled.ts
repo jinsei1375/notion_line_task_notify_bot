@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { sendLine } from '../src/app/lib/line';
-import { getTodayTasks } from '../src/app/lib/notion';
+import { sendLine } from '../lib/line';
+import { getTodayTasks } from '../lib/notion';
 
 export default async function handler(request: NextApiRequest, response: NextApiResponse) {
   const tasks = await getTodayTasks();
