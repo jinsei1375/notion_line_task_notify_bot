@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/api/scheduled.ts"
+    "src/app/api/notify/route.ts"
   ],
   "exclude": ["node_modules"]
 }
