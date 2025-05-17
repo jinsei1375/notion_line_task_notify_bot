@@ -2,7 +2,7 @@
   "version": 2,
   "crons": [
     {
-      "path": "/api/scheduled",
+      "path": "/src/app/api/scheduled",
       "schedule": "0 17 * * *"
     }
   ]
