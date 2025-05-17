@@ -1,8 +1,5 @@
-import { sendLine } from "@/app/lib/line";
-import { getTodayTasks } from "@/app/lib/notion";
-
-
-export const runtime = 'edge';
+import { sendLine } from '@/app/lib/line';
+import { getTodayTasks } from '@/app/lib/notion';
 
 export async function GET() {
   const tasks = await getTodayTasks();
