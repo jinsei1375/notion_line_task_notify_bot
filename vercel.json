@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "functions": {
+    "api/scheduled.ts": {
+      "runtime": "edge",
+      "schedule": "0 17 * * *"
+    }
+  }
+}
