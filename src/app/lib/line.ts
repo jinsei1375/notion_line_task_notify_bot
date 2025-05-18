@@ -1,6 +1,6 @@
 export async function sendLine(text: string) {
   const LINE_API = 'https://api.line.me/v2/bot/message/push';
-  const message = `本日期限のタスクは以下です。\n\n「${text}」`;
+  const message = `本日期限のタスクは以下です。\n\n${text}`;
   const res = await fetch(LINE_API, {
     method: 'POST',
     headers: {

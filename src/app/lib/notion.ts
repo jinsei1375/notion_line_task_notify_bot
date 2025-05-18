@@ -27,7 +27,7 @@ export async function getTodayTasks(): Promise<string[]> {
   const tasks = data.results.map((page: any) => {
     const titleProp = page.properties['タスク名']; // タスク名プロパティ
     const text = titleProp?.title?.[0]?.plain_text ?? '(無題)';
-    return text;
+    return `「${text}」`;
   });
 
   return tasks;
