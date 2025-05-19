@@ -1,5 +1,5 @@
-import { sendLine } from '@/app/lib/line';
-import { getTodayTasks } from '@/app/lib/notion';
+import { sendLine } from '@/lib/line';
+import { getTodayTasks } from '@/lib/notion';
 
 async function main() {
   const tasks = await getTodayTasks();
